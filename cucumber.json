@@ -2,6 +2,7 @@
     "default": {
       "require": ["features/**/*.js"],
       "format":["html:cucumber-report.html"],
+      
       "publish":true
 
       

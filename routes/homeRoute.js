@@ -8,11 +8,11 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
 
-  res.render('homepage')
+  res.render('homepage');
 });
 
 
-module.exports = router
+module.exports = router;
 
 
 

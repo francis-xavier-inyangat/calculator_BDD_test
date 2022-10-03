@@ -1,0 +1,51 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Simple Calculator using HTML, CSS and JavaScript
+  link(rel='stylesheet' href='./src/styles.css')
+table.calculator
+  tr
+    td(colspan='3')
+      input#result.display-box(type='text' disabled='')
+    // clearScreen() function clears all the values
+    td
+      input#btn(type='button' value='C' onclick='clearScreen()')
+  tr
+    // display() function displays the value of clicked button
+    td
+      input(type='button' value='1' onclick="display('1')")
+    td
+      input(type='button' value='2' onclick="display('2')")
+    td
+      input(type='button' value='3' onclick="display('3')")
+    td
+      input(type='button' value='/' onclick="display('/')")
+  tr
+    td
+      input(type='button' value='4' onclick="display('4')")
+    td
+      input(type='button' value='5' onclick="display('5')")
+    td
+      input(type='button' value='6' onclick="display('6')")
+    td
+      input(type='button' value='-' onclick="display('-')")
+  tr
+    td
+      input(type='button' value='7' onclick="display('7')")
+    td
+      input(type='button' value='8' onclick="display('8')")
+    td
+      input(type='button' value='9' onclick="display('9')")
+    td
+      input(type='button' value='+' onclick="display('+')")
+  tr
+    td
+      input(type='button' value='.' onclick="display('.')")
+    td
+      input(type='button' value='0' onclick="display('0')")
+    // calculate() function evaluates the mathematical expression
+    td
+      input#btn(type='button' value='=' onclick='calculate()')
+    td
+      input(type='button' value='*' onclick="display('*')")
+script(type='text/javascript' src='./src/script.js')
